@@ -1,4 +1,4 @@
-x,y=map(int,input().split())
+y,x=map(int,input().split())
 l1, l2, result = [], [], [[0 for _ in range(x)] for _ in range(y)]
 for i in range(y):
     l1.append(list(map(int,input().split())))
