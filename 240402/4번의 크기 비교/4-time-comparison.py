@@ -1,5 +1,5 @@
 a = int(input())
-b,c,d,e = map(int,intput().split())
+b,c,d,e = map(int,input().split())
 
 if a>b:
     print(1)
