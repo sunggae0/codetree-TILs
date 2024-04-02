@@ -7,4 +7,4 @@ for i in a:
     asum += i
     cnt +=1
 
-print("%d%.1f"%(asum, asum/cnt))
+print("%d %.1f"%(asum, asum/cnt))
