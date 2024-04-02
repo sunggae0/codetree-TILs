@@ -1,3 +1,3 @@
 a = list(map(int,input().split()))
 
-print(sum(a), sum(a)/10)
+print("%d %.1f" %(sum(a), sum(a)/10))
