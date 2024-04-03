@@ -1,5 +1,11 @@
 arr = list(map(int,input().split()))
 
-h = sum(arr)
+cnt = 0
+for i in arr:
+    if i == 0:
+        break
+    cnt +=1
 
-print("%d %.1f"%(h, h/10))
+for i in range(cnt):
+    h += arr[i]
+print("%d %.1f"%(h, h/cnt))
