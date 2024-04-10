@@ -1,9 +1,9 @@
 arr = []
 while True:
     n = int(input())
-    if n>=30:
-        break
-    else:
+    if 20<=n<=29:
         arr.append(n)
+    else:
+        break
 
 print("%.2f"%(sum(arr)/len(arr)))
