@@ -1,5 +1,5 @@
-arr_cnt = [0]*4
 a,b = map(int,input().split())
+arr_cnt = [0]*b
 
 while a > 1:
     arr_cnt[a%b] += 1
