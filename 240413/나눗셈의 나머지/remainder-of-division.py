@@ -6,6 +6,6 @@ while a > 1:
     a = a//b
 
 result = 0
-for i in range(4):
+for i in range(b):
     result += arr_cnt[i] ** 2
 print(result)
