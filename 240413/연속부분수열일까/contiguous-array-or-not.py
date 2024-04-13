@@ -10,6 +10,8 @@ while p<= n1-n2:
         if a[i] != b[i-p]:
             result = False
     p += 1
+    if result == True:
+        break
 
 if result == True:
     print("Yes")
