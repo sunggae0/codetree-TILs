@@ -10,7 +10,7 @@ a,b = map(int,input().split())
 
 result = 0
 for i in range(a,b+1):
-    if is_prime(i) == True:
+    if is_prime(i) == True and i != 1:
         result += i
 
 print(result)
