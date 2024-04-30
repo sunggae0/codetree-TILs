@@ -12,4 +12,5 @@ def result(a,o,c):
 
 a,o,c = input().split()
 
-print(int(a),o,int(c),'=',result(int(a),o,int(c)))
+r = result(int(a),o,int(c))
+print(int(a),o,int(c),'=',r) if r!='False' else print('False')
