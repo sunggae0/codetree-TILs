@@ -11,6 +11,11 @@ def date_check(y,m):
     if yun(y):
         if m==2:
             return 29
+        else:
+            if m==1 or m==3 or m==5 or m==7 or m==8 or m==10 or m==12:
+                return 31
+            else:
+                return 30
     else:
         if m==1 or m==3 or m==5 or m==7 or m==8 or m==10 or m==12:
             return 31
