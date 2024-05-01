@@ -5,8 +5,7 @@ def yun(y):
                 return True
             return False
         return True
-    else:
-        return False
+    return False
 
 def date_check(y,m):
     if yun(y):
@@ -15,7 +14,8 @@ def date_check(y,m):
     else:
         if m==1 or m==3 or m==5 or m==7 or m==8 or m==10 or m==12:
             return 31
-        else: return 30
+        else:
+            return 30
 
 def judge_md(y,m,d):
     if d>date_check(y,m):
