@@ -8,14 +8,10 @@ def yun(y):
     return False
 
 def date_check(y,m):
-    if yun(y):
-        if m==2:
+    if m==2:
+        if yun(y):
             return 29
-        else:
-            if m==1 or m==3 or m==5 or m==7 or m==8 or m==10 or m==12:
-                return 31
-            else:
-                return 30
+        return 28
     else:
         if m==1 or m==3 or m==5 or m==7 or m==8 or m==10 or m==12:
             return 31
