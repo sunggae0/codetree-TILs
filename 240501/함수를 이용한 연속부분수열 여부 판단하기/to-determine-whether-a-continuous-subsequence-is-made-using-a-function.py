@@ -1,6 +1,6 @@
 def result(a,b):
     temp = False
-    for i in range(len(a)-len(b)):
+    for i in range(len(a)-len(b)+1):
         if a[i:i+len(b)] == b:
             temp = True 
     return temp
