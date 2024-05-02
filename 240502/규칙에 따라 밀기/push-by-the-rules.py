@@ -6,7 +6,10 @@ for i in input():
     elif i=='R':
         comm -= 1
 
-
+if comm>0:
+    comm = comm%len(a)
+else:
+    comm - -(comm%len(a))
 for i in range(len(a)):
     print(a[comm],end='')
     if comm < len(a)-1:
