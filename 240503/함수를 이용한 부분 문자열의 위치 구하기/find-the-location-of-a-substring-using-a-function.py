@@ -11,7 +11,7 @@ def result(i):
 
 temp = False
 for i in range(tl-ol+1):
-    if result(i):
+    if result(i) and temp == False:
         print(i)
         temp = True
 if not(temp):
