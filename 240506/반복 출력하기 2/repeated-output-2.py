@@ -1,3 +1,4 @@
+n = int(input())
 def printHello(n):
     if n == 0:
         return
@@ -6,4 +7,4 @@ def printHello(n):
     print('HelloWorld')
 
 
-printHello(4)
+printHello(n)
