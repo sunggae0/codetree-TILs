@@ -1,9 +1,9 @@
 def result(cnt):
     if cnt==0:
         return
-    print('*'*cnt)
+    print('* '*cnt)
     result(cnt-1)
-    print('*'*cnt)
+    print('* '*cnt)
 
 n = int(input())
 result(n)
