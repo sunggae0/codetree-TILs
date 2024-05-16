@@ -7,6 +7,6 @@ def f(cnt):
             result = False
     if result:
         return cnt
-    return f(cnt+1)
+    return f(cnt+min(arr))
 
 print(f(max(arr)))
