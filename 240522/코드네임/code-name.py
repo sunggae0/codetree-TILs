@@ -13,4 +13,4 @@ for i in range(5):
         minn = pt
         result = i
     
-print(arr[minn].code, arr[minn].point)
+print(arr[result].code, arr[result].point)
