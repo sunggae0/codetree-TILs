@@ -9,8 +9,11 @@ minn = 0
 result = 0
 for i in range(5):
     pt = int(arr[i].point)
-    if pt < minn and i!=0:
+    if i!= 0:
+        if pt < minn:
+            minn = pt
+            result = i
+    else:
         minn = pt
-        result = i
     
 print(arr[result].code, arr[result].point)
