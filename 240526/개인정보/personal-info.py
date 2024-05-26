@@ -11,7 +11,7 @@ print('name')
 for i in temp:
     print(i.name, i.height, i.weight,)
 
-temp = sorted(arr, key = lambda x: (-x.height))
+temp = sorted(arr, key = lambda x: (-int(x.height)))
 print('\nheight')
 for i in temp:
     print(i.name, i.height, i.weight,)
