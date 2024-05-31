@@ -16,6 +16,6 @@ d=['Sun','Mon','Tue','Wed','Thu','Fri','Sat']
 selected_day = d.index(a) + 1
 cnt=0
 for i in range(days(m1,d1),days(m2,d2)+1):
-    if i%selected_day==0:
+    if (i)%7==selected_day-1:
         cnt+=1
 print(cnt)
