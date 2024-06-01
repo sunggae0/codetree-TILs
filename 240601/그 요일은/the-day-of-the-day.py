@@ -16,8 +16,9 @@ end_date = datetime.date(2024, m2, d2)
 count = 0
 current_date = start_date
 
+# 특정 요일이 몇 번 나오는지 세기
 while current_date <= end_date:
-    if current_date.weekday() == weekday_index:
+    if current_date.strftime("%a") == A:
         count += 1
     current_date += datetime.timedelta(days=1)
 
