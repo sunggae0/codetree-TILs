@@ -1,26 +1,25 @@
-import datetime
+def days(m2,d2):
+    m1,d1,cnt = 1,1,0
+    while True:
+        if m1==m2 and d1==d2:
+            break
+        d1 +=1
+        cnt += 1
+        if d1 > m[m1]:
+            d1=1
+            m1+=1
+    return cnt
 
-# 입력 받기
-m1, d1, m2, d2 = map(int, input().split())
-A = input().strip()
+m = [0,31,29,31,30,31,30,31,31,30,31,30,31]
+d = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
 
-# 요일 매핑
-weekdays = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
-weekday_index = weekdays.index(A)
+m1,d1,m2,d2 = map(int,input().split())
+selected = d.index(input())
 
-# 시작 날짜와 끝 날짜 설정
-start_date = datetime.date(2024, m1, d1)
-end_date = datetime.date(2024, m2, d2)
-
-# A 요일이 몇 번 등장하는지 세기
-count = 0
-current_date = start_date
-
-# 특정 요일이 몇 번 나오는지 세기
-while current_date <= end_date:
-    if current_date.strftime("%a") == A:
-        count += 1
-    current_date += datetime.timedelta(days=1)
-
-# 결과 출력
-print(count)
+day1 = days(m1,d1)
+day2 = days(m2,d2)
+cnt=0
+for i in range(day2-day1+1):
+    if i%7 == selected:
+        cnt+=1
+print(cnt)
