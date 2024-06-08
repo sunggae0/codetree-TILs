@@ -38,9 +38,10 @@ for i in range(n):
         arr = refresh_list(arr,move)
     
     for j in range(temp[0],temp[1]):
-        arr[j].append(color%2) #even=black, odd=white
-        if count(0,arr[j])>=2 and count(1,arr[j]) >= 2:
+        if arr[j] and arr[j].count(0)>=2 or arr[j].count(1) >= 2:
             arr[j].append(2) # gray
+        else:
+            arr[j].append(color%2) #even=black, odd=white
             
     color+=1
 
