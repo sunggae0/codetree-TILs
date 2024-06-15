@@ -55,10 +55,10 @@ N,M=map(int,input().split())
 movements_A = []
 movements_B = []
 for i in range(N):
-    movements_A.append(tuple(input().split()))
+    movements_A.append(list(input().split()))
     movements_A[i][1] = int(movements_A[i][1])
 for i in range(M):
-    movements_B.append(tuple(input().split()))
+    movements_B.append(list(input().split()))
     movements_B[i][1] = int(movements_B[i][1])
 
 
